@@ -12,7 +12,7 @@ it "release bike should return a bike" do
 end
 
 it "expects bike to be working" do
-  bike.working? == true
+  expect(bike.working?).to eq true
 end
 
 station = DockingStation.new
