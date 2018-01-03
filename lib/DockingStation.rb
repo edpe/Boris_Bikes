@@ -9,7 +9,8 @@ end
 attr_reader :dock
 
 def release_bike
-  Bike.new
+   fail "no bikes" if  @dock.empty? == true
+   Bike.new
 end
 
 def dock_bike(bike)
